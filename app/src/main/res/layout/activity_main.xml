@@ -4,7 +4,7 @@ xmlns:app="http://schemas.android.com/apk/res-auto"
 xmlns:tools="http://schemas.android.com/tools"
 android:id="@+id/container"
 android:layout_width="match_parent"
-android:layout_height="match_parent">
+android:layout_height="200dp">
 
 <EditText
     android:id="@+id/editTextMensaje"
@@ -15,15 +15,16 @@ android:layout_height="match_parent">
     app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintTop_toTopOf="parent" />
 
-<Button
-    android:id="@+id/buttonAbrirActividad2"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="Abrir Activity 2"
-    app:layout_constraintTop_toBottomOf="@+id/editTextMensaje"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintEnd_toEndOf="parent"
-    android:onClick="abrirActividad2" />
+    <Button
+        android:id="@+id/buttonAbrirActividad2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:onClick="abrirActividad2"
+        android:text="Abrir Activity 2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextMensaje" />
 
     <Button
         android:id="@+id/buttonCambiarColor"
@@ -31,8 +32,9 @@ android:layout_height="match_parent">
         android:layout_height="wrap_content"
         android:onClick="cambiarColorFondo"
         android:text="Cambiar Color"
-        tools:layout_editor_absoluteX="136dp"
-        tools:layout_editor_absoluteY="126dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonAbrirActividad2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 
